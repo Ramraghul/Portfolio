@@ -32,6 +32,12 @@ function Skill() {
         {
             icon: <img src="./Asset/postman.png" alt="" className="HTML" />
         },
+        {
+            icon: <img src="./Asset/github.png" alt="" className="HTML" />
+        },
+        {
+            icon: <img src="./Asset/ex.png" alt="" className='HTML' />
+        },
     ]
     return (
         <>

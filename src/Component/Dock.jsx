@@ -16,12 +16,14 @@ function Dock() {
                 </div>
             </section>
             {/* <!-- End Hero --> */}
+
             <About></About>
             <Skill></Skill>
             <Project></Project>
             <Resume></Resume>
             <Contact></Contact>
-            <a href="#hero" className="back-to-top d-flex align-items-center justify-content-center"><i className="fa-solid fa-arrow-up"></i></a>
+
+            <a href="#hero" id='top' className='back-to-top d-flex align-items-center justify-content-center'><i className="fas fa-angle-double-up"></i></a>
         </>
     )
 }

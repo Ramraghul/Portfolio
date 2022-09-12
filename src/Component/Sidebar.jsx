@@ -1,10 +1,16 @@
+import { useState } from "react"
+
 function Sidebar() {
+    const[toggle,settoggle]=useState(false)
+    const handleChange=()=>{
+        settoggle(!toggle)
+    }
     
     return (
         <>
-        <i className="fa fa-list mobile-nav-toggle d-xl-none"></i> 
+        <i className="fa fa-list mobile-nav-toggle d-xl-none" onClick={handleChange}></i> 
             {/* <!-- Header --> */}
-            <header id="header">
+            <header id="header" className={toggle?`show`:"hide"}>
                 <div className="d-flex flex-column">
                     <div className="profile">
 
@@ -36,7 +42,7 @@ function Sidebar() {
                             </li>
                             <li>
                                 <a href="#portfolio" className="nav-link "><i className="fa fa-project-diagram"></i>
-                                    <span>Portfolio</span></a>
+                                    <span>Project</span></a>
                             </li>
                             <li>
                             <li><a href="#resume" className="nav-link "><i className="fa fa-file"></i>
@@ -52,6 +58,8 @@ function Sidebar() {
                 </div >
             </header >
             {/* // < !--End Header-- > */}
+
+            
         </>
     )
 }
