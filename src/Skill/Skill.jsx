@@ -38,6 +38,9 @@ function Skill() {
         {
             icon: <img src="./Asset/ex.png" alt="" className='HTML' />
         },
+        {
+            icon: <img src="./Asset/heroku.png" alt="" className='HTML' />
+        },
     ]
     return (
         <>
